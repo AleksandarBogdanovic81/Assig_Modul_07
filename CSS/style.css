@@ -9,12 +9,11 @@ body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: var(--wrap-bg-color, white);
     background-color: var(--bg-color, gray);
-    padding: 1rem 0;
 }
 
 .container {
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .article {
@@ -39,7 +38,7 @@ body {
     background-color: var(--img-bg-color);
     background: url(../images/320w.jpg) no-repeat center;
     background-size: cover;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 h1, .caption > p, .description {
@@ -48,6 +47,7 @@ h1, .caption > p, .description {
 
 .caption > p {
     color: var(--bg-color, gray);
+    margin: 0;
 }
 
 .footer {
@@ -56,22 +56,22 @@ h1, .caption > p, .description {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .article {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
     }
     .image {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.6rem;
     }
-        h1, .description {
+    h1, .description {
         text-align: left;
     }
 }
 
 @media screen and (min-width: 992px) {
     .article {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, auto);
     }
     .image {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.4rem;
     }
     h1, .description {
         text-align: left;
